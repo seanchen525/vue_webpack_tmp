@@ -1,32 +1,23 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <router-view/>
-    <app-footer></app-footer>
+    <div class="main-container">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-import HeaderBar from '@/components/HeaderBar'
-import FooterBar from '@/components/FooterBar'
-import 'bootstrap/dist/css/bootstrap.css'
+import HeaderBar from '@/components/partials/HeaderBar'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    'app-header': HeaderBar,
-    'app-footer': FooterBar
+    'app-header': HeaderBar
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 20px;
-}
+<style lang="scss">
+  @import "sass/main"
 </style>
