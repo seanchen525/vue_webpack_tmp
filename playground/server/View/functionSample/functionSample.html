@@ -1,0 +1,18 @@
+<head>
+	<script type="text/javascript" src="/functionSample/functionSample.js">
+		
+	</script>
+</head>
+<body>
+	<h3>Rhythm 1 (120 BPM)</h3>
+<input type="button" value="Play Rhythm 1" onclick="startPlayingRhythm1(bufferLoader.bufferList);" />
+
+<h3>Rhythm 2 (80 BPM)</h3>
+<input type="button" value="Play Rhythm 2" onclick="startPlayingRhythm2(bufferLoader.bufferList);" />
+<h3>MergeAudios</h3>
+<input type="button" value="Play Merge" onclick="merge(bufferLoader.bufferList);" />
+<h3>AppendAudios</h3>
+<input type="button" value="Append Audios" onclick="appendAudio(bufferLoader.bufferList);" />
+<h3>Download</h3>
+<input type="button" value="Download" onclick="downloadMusic(bufferLoader.bufferList[4],'music');" />
+</body>
